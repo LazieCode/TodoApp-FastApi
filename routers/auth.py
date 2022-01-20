@@ -25,7 +25,7 @@ oauth2_bearer = OAuth2PasswordBearer(tokenUrl = "token")
 templates = Jinja2Templates(directory="templates")
 
 router = APIRouter(
-    prefix="/auth",
+    # prefix="/auth",
     tags=["auth"],
     responses={404: {"description": "User unauthorized"}}
 )
